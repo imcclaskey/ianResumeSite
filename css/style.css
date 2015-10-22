@@ -15,7 +15,7 @@ a:hover {
 
  /* navbar-custom styling here*/
 .navbar-custom {
-	margin: 30px 20px 30px 20px;
+	margin: 30px 25px 30px 25px;
     background-color: rgba(0,0,0,0.0);
     color: rgba(255,255,255,.8);
     text-transform: uppercase;
@@ -45,6 +45,18 @@ a:hover {
 .icon-bar {
 	background-color: #fff;
 }
+
+
+/* navmenu-custom styling here */
+.navmenu{
+    width: 200px;
+}
+
+.navmenu-custom {
+background-color: rgb(35, 35, 35)
+}
+
+
 
 
 /* jumbotron styling here */
