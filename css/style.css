@@ -13,9 +13,16 @@ a:hover {
 }
 
 
+
+
+
+
+
+
+
  /* navbar-custom styling here*/
 .navbar-custom {
-	margin: 30px 25px 30px 25px;
+	margin: 30px 30px 30px 30px;
     background-color: rgba(0,0,0,0.0);
     color: rgba(255,255,255,.8);
     text-transform: uppercase;
@@ -46,15 +53,32 @@ a:hover {
 	background-color: #fff;
 }
 
+.navbar-toggle {
+    margin-right: 0px;
+}
+
+
+
+
+
 
 /* navmenu-custom styling here */
 .navmenu{
     width: 200px;
+    border-style: none;
 }
 
 .navmenu-custom {
 background-color: rgb(35, 35, 35)
 }
+
+#pushmenu{
+    padding: 0px 30px 0px 30px;
+}
+
+
+
+
 
 
 
@@ -64,9 +88,4 @@ background-color: rgb(35, 35, 35)
     background: url('http://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-69760.jpg') no-repeat center center;
     background-size: cover;
     padding-top: 98px;
-
 }
-
-
-
-
