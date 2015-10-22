@@ -1,5 +1,60 @@
 /* All style should go in this document. */
-body { padding-top: 50px; }
-@media screen and (max-width: 768px) {
-    body { padding-top: 0px; }
+body { 
+	/* padding-top: 50px; */
 }
+
+/* Links */
+a{
+	color: rgba(255,255,255,.8);
+}
+
+a:hover {
+    color: #fff;
+}
+
+
+ /* Custom Navbar */
+.navbar-custom {
+    background-color: rgba(0,0,0,0.0);
+    color: rgba(255,255,255,.8);
+    text-transform: uppercase;
+	font-size: 13px;
+	letter-spacing: 0px;
+	font-weight: 500;
+    border-radius:0;
+}
+
+.navbar-custom .navbar-nav > li > a {
+    color:(255,255,255,.6);
+    background-color:transparent;
+}
+
+.navbar-custom .navbar-nav >li > a:hover {
+	color: #fff;
+}
+.navbar-custom .navbar-nav > .active > a, .navbar-nav > .active > a:hover, .navbar-nav > .active > a:focus {
+    color: (255,255,255,.6);
+    background-color:transparent;
+}
+.navbar-custom .navbar-brand {
+    color:#eeeeee;
+}
+
+.icon-bar {
+	background-color: #fff;
+}
+
+
+
+
+
+
+
+.jumbotron{
+    background: url('http://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-113384.png') no-repeat center center;
+    background-size: cover;
+}
+
+
+
+
