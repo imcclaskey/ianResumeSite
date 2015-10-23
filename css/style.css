@@ -37,6 +37,8 @@ a:focus {
     border-radius:0;
 }
 
+.navbar-custom
+
 .navbar-custom .navbar-nav > li > a {
     color:(255,255,255,.6);
     background-color:transparent;
@@ -67,27 +69,23 @@ a:focus {
     color:#eeeeee;
 }
 
+/*-- icon bar styling */
 .icon-bar {
-	background-color: #fff;
+	background-color: rgba(255,255,255,.6);
 }
-
+.navbar-custom .navbar-toggle:hover .icon-bar {
+    background-color: white;
+}
 .navbar-toggle {
     margin-right: 0px;
 }
 
 
 /* navmenu-custom styling here */
-
 .nav > li > a:hover, .nav > li > a:focus {
     text-decoration: none;
     background-color: transparent;
 }
-
-.nav > li > a:hover, .nav > li > a:focus {
-    text-decoration: none;
-    background-color: transparent;
-}
-
 
 .navmenu{
     color: rgba(255,255,255,.8);
@@ -119,7 +117,10 @@ background-color: rgb(35, 35, 35)
 
 
 /* jumbotron styling here */
-#jumbo {
+#jumbo-inset {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
     color: rgb(230,230,230);
 }
 
