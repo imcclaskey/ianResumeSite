@@ -60,11 +60,11 @@ a:focus {
 
 .navbar-custom .navbar-brand {
     color:#eeeeee;
-    letter-spacing: 6px;
+    font-family: tahoma;
+    letter-spacing: 4px;
     font-weight: 300;
     padding-left: 0px;
 }
-
 
 
 
@@ -130,8 +130,8 @@ background-color: rgb(35, 35, 35)
 .jumbotron{
     background: url('../jumbo.jpg') no-repeat center center;
     background-size: cover;
-    padding-top: 88px;
-    padding-bottom: 50px;
+    padding-top: 90px;
+    padding-bottom: 70px;
 }
 
 .jumbotron p{
@@ -151,7 +151,8 @@ background-color: rgb(35, 35, 35)
     color: rgba(255,255,255,.8);
     letter-spacing: 6px;
     font-size: 20px;
-    font-family:helvetica;
+    font-family:trebuchet;
+    text-transform: uppercase;
     
 }
 
@@ -186,6 +187,22 @@ background-color: rgb(35, 35, 35)
 /* first-content styling here */
 
 #first-content {
-    padding-top: 50px;
+    padding-top: 70px;
 }
 
+#first-content #title {
+    font-family: garamond;
+    font-size: 32px;
+    color: rgb(0, 0, 0, 0);
+    letter-spacing: 3px;
+    text-align: center;
+    padding: 30px 30px 30px 30px;
+}
+
+#first-content #subtitle {
+    font-size: 16px;
+    color: gray;
+    letter-spacing: 3px;
+    text-align: center;
+    padding: 0px 120px 50px 120px;
+}
