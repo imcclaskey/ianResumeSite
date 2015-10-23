@@ -27,7 +27,7 @@ a:focus {
 
  /* navbar-custom styling here*/
 .navbar-custom {
-	margin: 30px 30px 30px 40px;
+	margin: 30px 40px 30px 40px;
     background-color: rgba(0,0,0,0.0);
     color: rgba(255,255,255,.8);
     text-transform: uppercase;
@@ -37,37 +37,39 @@ a:focus {
     border-radius:0;
 }
 
-.navbar-custom
-
 .navbar-custom .navbar-nav > li > a {
     color:(255,255,255,.6);
     background-color:transparent;
 }
 
-.navbar-custom .navbar-nav >li > a:hover {
+.navbar-custom .navbar-nav > li > a:hover {
 	color: #fff;
     background-color: transparent;
 }
 
-.navbar-custom .navbar-nav > a:focus{
+.navbar-custom .navbar-nav > li > a:focus{
+    background-color: transparent;
+    color: #fff;
+}
+
+.navbar-custom .navbar-nav > li > a:active {
     background-color: transparent;
     color: #fff;
 }
 
 
-
-
-
-
-
-
-.navbar-custom .navbar-nav > a, .navbar-nav > .active > a:hover, .navbar-nav > .active > a:focus {
-    color: (255,255,255,.6);
-    background-color:transparent;
-}
 .navbar-custom .navbar-brand {
     color:#eeeeee;
+    letter-spacing: 6px;
+    font-weight: 300;
+    padding-left: 0px;
 }
+
+
+
+
+
+
 
 /*-- icon bar styling */
 .icon-bar {
@@ -81,6 +83,11 @@ a:focus {
 }
 
 
+
+
+
+
+
 /* navmenu-custom styling here */
 .nav > li > a:hover, .nav > li > a:focus {
     text-decoration: none;
@@ -89,24 +96,20 @@ a:focus {
 
 .navmenu{
     color: rgba(255,255,255,.8);
-    font-size: 11px;
-    letter-spacing: 2px;
+    font-size: 14px;
+    letter-spacing: 4px;
     font-weight: 500;
     border-radius:0;
     width: 200px;
     border-style: none;
 }
 
-.navmenu-brand{
-    font-size: 14px;
-}
-
 .navmenu-custom {
 background-color: rgb(35, 35, 35)
 }
 
-#pushmenu{
-    padding: 0px 30px 0px 30px;
+#push-menu{
+    padding: 20px 30px 30px 30px;
 }
 
 
@@ -118,8 +121,8 @@ background-color: rgb(35, 35, 35)
 
 /* jumbotron styling here */
 #jumbo-inset {
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
     text-align: center;
     color: rgb(230,230,230);
 }
@@ -127,5 +130,62 @@ background-color: rgb(35, 35, 35)
 .jumbotron{
     background: url('../jumbo.jpg') no-repeat center center;
     background-size: cover;
-    padding-top: 98px;
+    padding-top: 88px;
+    padding-bottom: 50px;
 }
+
+.jumbotron p{
+    margin-top: 25px;
+    margin-bottom: 25px
+}
+
+#jumbo-follow{
+    text-transform: uppercase;
+    font-weight :500;
+    font-size: 14px;
+    letter-spacing:6px;
+    margin-top: 45px;
+}
+
+#jumbo-lead{
+    color: rgba(255,255,255,.8);
+    letter-spacing: 6px;
+    font-size: 20px;
+    font-family:helvetica;
+    
+}
+
+#jumbo-hero{
+    color: #FFF;
+    font-size: 72px;
+    font-weight: 600;
+    letter-spacing:6px;
+    line-height:80px
+}
+
+
+#jumbo-link {
+    color: rgba(255,255,255,.8);
+    border: 2px solid white;
+    padding: 13px 10px 13px 15px;
+    letter-spacing: 4px;
+    margin-right: 4px;
+}
+
+#jumbo-link:hover {
+    background-color: white;
+    border: 2px solid white;
+    padding: 13px 10px 13px 15px;
+    letter-spacing: 4px;
+    margin-right: 4px;
+    color: black;
+    text-decoration: none
+}
+
+
+/* first-content styling here */
+
+#first-content {
+    padding-top: 50px;
+}
+

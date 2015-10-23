@@ -21,55 +21,69 @@
   </head>
 
   <body>
-  	<nav class="nav navbar navbar-custom navbar-fixed-top">
-  		<button type="button" class="navbar-toggle" data-toggle="offcanvas" data-target=".navmenu" data-canvas="body">
+
+
+    <!-- navbar brand and push menu button here -->
+    <nav class="nav navbar navbar-custom navbar-fixed-top">
+      <button type="button" class="navbar-toggle" data-toggle="offcanvas" data-target=".navmenu" data-canvas="body">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
       </div>
-  				<a class="navbar-brand" href="#">ian mcclaskey</a>
-			</div>
+          <a class="navbar-brand" href="index.html">ianmcclaskey</a>
+      </div>
 
 
-			<div id="navbar" class="collapse navbar-collapse">
-				<ul class="nav navbar-nav navbar-right">
-					<li ><a href="index.html">home</a></li>
-					<li class="active"><a href="portfolio.html">portfolio</a></li>
-					<li><a href="about.html">about</a></li>
-					<li><a href="resume.html">resume</a></li>
-					<li><a href="contact.html">contact</a></li>
-				</ul>
-			</div>
+      <!-- navbar right uncollapsed here -->
+      <div class="collapse navbar-collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="active"><a href="index.html">home</a></li>
+          <li><a href="portfolio.html">portfolio</a></li>
+          <li><a href="about.html">about</a></li>
+          <li><a href="resume.html">resume</a></li>
+          <li><a href="contact.html">contact</a></li>
+        </ul>
+      </div>
     </nav>
 
+
+    <!-- navmenu here -->
     <div id="navmenu" class="navmenu navmenu-custom navmenu-fixed-right offcanvas" style="right: 0px;">
-      <a class="navmenu-brand" href="#">ian mcclaskey</a>
-      <div id="pushmenu" class="container">
+      <div id="push-menu" class="container">
         <ul class="nav navbar-nav">
-          <li><a href="index.html">HOME</a></li>
-          <li class="active"><a href="portfolio.html">PORTFOLIO</a></li>
+          <li><a class="active" href="index.html">HOME</a></li>
+          <li><a href="portfolio.html">PORTFOLIO</a></li>
           <li><a href="about.html">ABOUT</a></li>
           <li><a href="resume.html">RESUME</a></li>
           <li><a href="contact.html">CONTACT</a></li>
         </ul>
-        <div class="container"></div>
       </div>
     </div>
 
+<!-- I am a philosophy major turned software developer and all around tech geek. On the rare occasion that I am not in front of a screen, I love to make my own beef jerkey and ski downhill in deep snow. -->
 
-  	<!--jumbotron here -->
-  	<div class="jumbotron container-fluid">
-  		<div id= "jumbo" class="container">
-  			<h1> My Portfolio</h1>
-  			<p> My name is Ian McClaskey. I am an aspiring programmer with experience in Python, Java, and Bootstrap. Please take a look around my site! </p>
-  		</div>
+    <!--jumbotron here -->
+    <div class="jumbotron container-fluid">
+      <div id= "jumbo-inset" class="container">
+        <p id="jumbo-lead">Be amazed at my </p>
+        <!-- FFF5DD FFEFDF FFFAE6-->
+        <p id="jumbo-hero" style="color: #FFF; font-size: 72px; font-weight: 600; letter-spacing:6px; line-height:80px"> EXCITING PORTFOLIO </p>
+        <p id="jumbo-follow"> Download a <a id="jumbo-link" href="resume.html">RESUME</a> or <a id="jumbo-link" href="contact.html">CONTACT ME</a> </p>
+      </div>
     </div>
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <div class="container-fluid">
+      <p> hey hey hey </p>
+
+
+
+    </div>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jasny-bootstrap.min.js"></script>
+
+
   </body>
 </html>
