@@ -119,6 +119,10 @@ background-color: rgb(35, 35, 35)
 
 
 /* jumbotron styling here */
+#jumbo {
+    color: rgb(230,230,230);
+}
+
 .jumbotron{
     background: url('../jumbo.jpg') no-repeat center center;
     background-size: cover;
