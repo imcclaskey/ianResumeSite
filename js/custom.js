@@ -26,7 +26,11 @@ $(document).ready(function() {
 	  	$(this).delay(i * 200).fadeIn();
 	});
 	
-
+	$('.dropfade').each(function(i, obj) {
+		setTimeout($obj.removeClass("dropfade")
+   		, 800);
+		
+	});
 
 
 
@@ -65,23 +69,23 @@ $(document).ready(function() {
 
 	//resume icon hover effect
 
-	$('#icons div img').each(function(i, obj) {
-		
+	
+
 		/* $(this).hover(function() {
 		   $(this).hide( function(){
 		      $(this).attr('src', techIcons[i]).bind('onreadystatechange load', function(){
 		         if (this.complete) $(this).fadeIn(300);
 		      });
 		   });
-		}); */
+		}); 
 
 		obj.addEventListener("mouseover",function(){
 		    this.src = techIcons[i];
 		});
 		obj.addEventListener("mouseout",function(){
 		    this.src = techHolds[i];
-		});
-	}); 
+		}); 
+	}); */
 
 });
 

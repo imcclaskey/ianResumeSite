@@ -43,10 +43,10 @@ a:focus {
 
 
 .navbar {
-    -webkit-transition: background 0.3s ease-in-out, padding 0.3s ease-in-out, border-bottom 0.3s ease-in-out; 
-    -moz-transition: background 0.3s ease-in-out, padding 0.3s ease-in-out, border-bottom 0.3s ease-in-out; 
-    -o-transition: background 0.3s ease-in-out, padding 0.3s ease-in-out, border-bottom 0.3s ease-in-out; 
-    transition: background 0.3s ease-in-out, padding 0.3s ease-in-out, border-bottom 0.3s ease-in-out; 
+    -webkit-transition: background 0.25s ease-in-out, padding 0.25s ease-in-out, border-bottom 0.25s ease-in-out; 
+    -moz-transition: background 0.25s ease-in-out, padding 0.25s ease-in-out, border-bottom 0.25s ease-in-out; 
+    -o-transition: background 0.25s ease-in-out, padding 0.25s ease-in-out, border-bottom 0.25s ease-in-out; 
+    transition: background 0.25s ease-in-out, padding 0.25s ease-in-out, border-bottom 0.25s ease-in-out; 
 }
 
 .navbar-custom {
@@ -56,7 +56,7 @@ a:focus {
 	font-size: 11px;
 	letter-spacing: 2px;
 	font-weight: 500;
-    border-bottom: 1px solid rgba(180,180,180, 1);
+    border-bottom: 1px solid rgba(180,180,180, .8);
 }
 
 .navbar-custom .navbar-brand {
@@ -65,19 +65,19 @@ a:focus {
     letter-spacing: 4px;
     font-weight: 300;
     padding-left: 0px;
-    -webkit-transition: color 0.3s ease .1s;
-    -moz-transition: color 0.3s ease .1s;
-    -o-transition: color 0.3s ease .1s;
-    transition: color 0.3s ease .1s;
+    -webkit-transition: color 0.25s ease .1s;
+    -moz-transition: color 0.25s ease .1s;
+    -o-transition: color 0.25s ease .1s;
+    transition: color 0.25s ease .1s;
     
 }
 
 .navbar-custom .navbar-nav > li > a {
     color: rgb(80,80,80);
-    -webkit-transition: color 0.3s ease .1s;
-    -moz-transition: color 0.3s ease .1s;
-    -o-transition: color 0.3s ease .1s;
-    transition: color 0.3s ease .1s;
+    -webkit-transition: color 0.25s ease .1s;
+    -moz-transition: color 0.25s ease .1s;
+    -o-transition: color 0.25s ease .1s;
+    transition: color 0.25s ease .1s;
     
 }
 
@@ -110,7 +110,7 @@ a:focus {
 -------------------------------------*/
 
 .navbar-transparent {
-    padding: 20px 30px;
+    padding: 15px 30px 7px 30px;
     background: transparent;
     border-bottom: 1px solid rgba(180,180,180, 0);
 }
@@ -338,17 +338,28 @@ background-color: rgb(35, 35, 35)
     resume specific here
 
 ---------------------------------*/
+#resume #icons {
 
+}
 
 #resume #icons div{
     padding: 20px 20px;
+    
 }
 
-#resume i{
-    color: rgb(80,80,80);
-    font-size: 16rem;
+#resume img{
+    bottom: 0px;
+    opacity: 100%;
+    position: relative;
+    -webkit-transition: bottom 0.3s ease, opacity 0.2s ease-out;
+    -moz-transition: bottom 0.3s ease, opacity 0.2s ease-out;
+    -o-transition: bottom 0.3s ease, opacity 0.2s ease-out;
+    transition: bottom 0.3s ease, opacity 0.2s ease-out;
+    
 }
 
-#resume #icons i:nth-child(1):hover{
-
+#resume .dropfade {
+    position:relative ;
+    bottom: 50px;   
+    opacity: 0;
 }
