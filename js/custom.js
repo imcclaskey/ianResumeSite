@@ -1,17 +1,43 @@
+
 $(document).ready(function() {
-
-
-
-
 
 	navbar = $('#navbar');
 	navbarToggle = $('#navbar-toggle');
+	techIcons = [
+					"icons/html5-original.svg",
+					"icons/css3-original.svg", 
+					"icons/javascript-original.svg",
+					"icons/meteor-original.svg",
+					"icons/photoshop-plain.svg",
+					"icons/illustrator-plain.svg"];
+
+	console.log(techIcons);
+
+	/*
+	techIcons = [
+					["icons/html5-plain.svg", "icons/html5-original.svg"],
+					["icons/css3-plain.svg", "icons/css3-original.svg"],
+					["icons/javascript-plain.svg", "icons/javascript-original.svg"],
+					["icons/meteor-plain.svg", "icons/meteor-original.svg"],
+					["icons/photoshop-line.svg", "icons/photoshop-plain.svg"],
+					["icons/illustrator-line.svg", "icons/illustrator-plain.svg"]
+	];
+	*/
 
 
-	$('#testimonial').each(function(i, obj) {
-		console.log(obj);
-    	
-	});
+	$('#icons div img').each(function(i, obj) {
+		var hold = [];
+		hold.push(this.src);
+		console.log(hold);
+		obj.addEventListener("mouseover",function(){
+		    this.src = techIcons[i];
+		});
+		obj.addEventListener("mouseout",function(){
+		    this.src = hold[i];
+		});
+	}); 
+
+
 
 	navbarCheck(navbar);
 
@@ -24,12 +50,12 @@ $(document).ready(function() {
 
 
 	function navbarCheck() {
-				if (navbar.hasClass('navbar-transparent')) {
-					navbarTrans = true;
-				} else {
-					navbarTrans = false;
-				}
-			}
+		if (navbar.hasClass('navbar-transparent')) {
+			navbarTrans = true;
+		} else {
+			navbarTrans = false;
+		}
+	}
 
 	function navbarAnimation(navbar, navbarToggle) {
 		var topScroll = $(window).scrollTop();
@@ -46,9 +72,3 @@ $(document).ready(function() {
 });
 
 
-function hover(techIcon) {
-    element.setAttribute('src', 'http://dummyimage.com/100x100/eb00eb/fff');
-}
-function unhover(techIcon) {
-    element.setAttribute('src', 'http://dummyimage.com/100x100/000/fff');
-}
