@@ -20,6 +20,13 @@ a:focus {
 }
 
 
+/*-----------------------------------
+
+      devicon styling here
+
+-------------------------------------*/
+
+
 
 
 
@@ -202,17 +209,11 @@ background-color: rgb(35, 35, 35)
 }
 
 
-
-
-
-
-
-
 /*--------------------------------
 
     jumbotron styling here 
 
--------------------------------*/
+---------------------------------*/
 
 
 
@@ -280,13 +281,17 @@ background-color: rgb(35, 35, 35)
 }
 
 
-/* first-content styling here */
+/*--------------------------------
 
-#first-content {
+    content here
+
+---------------------------------*/
+
+.content {
     padding-top: 70px;
 }
 
-#first-content #title {
+.content #title {
     font-family: garamond;
     font-size: 32px;
     color: rgb(0, 0, 0, 0);
@@ -295,10 +300,31 @@ background-color: rgb(35, 35, 35)
     padding: 30px 30px 30px 30px;
 }
 
-#first-content #subtitle {
+.content #subtitle {
     font-size: 16px;
     color: gray;
     letter-spacing: 3px;
     text-align: center;
     padding: 0px 120px 50px 120px;
+}
+
+
+/*--------------------------------
+
+    resume specific here
+
+---------------------------------*/
+
+
+#resume #icons div{
+    padding: 20px 20px;
+}
+
+#resume i{
+    color: rgb(80,80,80);
+    font-size: 16rem;
+}
+
+#resume #icons i:nth-child(1):hover{
+    : ;
 }

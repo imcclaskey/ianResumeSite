@@ -1,11 +1,22 @@
 $(document).ready(function() {
 
 
+
+
+
 	navbar = $('#navbar');
 	navbarToggle = $('#navbar-toggle');
-	console.log(navbar)
+
+
+	$('#testimonial').each(function(i, obj) {
+		console.log(obj);
+    	
+	});
+
 	navbarCheck(navbar);
 
+
+	// navbar transform on scroll
 
 	$(window).scroll(function() {
 			navbarAnimation(navbar, navbarToggle);
@@ -15,10 +26,8 @@ $(document).ready(function() {
 	function navbarCheck() {
 				if (navbar.hasClass('navbar-transparent')) {
 					navbarTrans = true;
-					console.log(navbarTrans);
 				} else {
 					navbarTrans = false;
-					console.log(navbarTrans);
 				}
 			}
 
@@ -35,3 +44,11 @@ $(document).ready(function() {
 		}
 	}
 });
+
+
+function hover(techIcon) {
+    element.setAttribute('src', 'http://dummyimage.com/100x100/eb00eb/fff');
+}
+function unhover(techIcon) {
+    element.setAttribute('src', 'http://dummyimage.com/100x100/000/fff');
+}
