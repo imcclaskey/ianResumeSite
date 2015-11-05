@@ -42,11 +42,11 @@ a:focus {
 -------------------------------------*/
 
 
-.nav {
-    -webkit-transition: background 0.3s ease-in-out, padding 0.3s ease-in-out, border 0.3s ease-in-out;
-    -moz-transition: background 0.3s ease-in-out, padding 0.3s ease-in-out, border 0.3s ease-in-out;
-    -o-transition: background 0.3s ease-in-out, padding 0.3s ease-in-out, border 0.3s ease-in-out;
-    transition: background 0.3s ease-in-out, padding 0.3s ease-in-out, border 0.3s ease-in-out;
+.navbar {
+    -webkit-transition: background 0.3s ease-in-out, padding 0.3s ease-in-out, border-bottom 0.3s ease-in-out; 
+    -moz-transition: background 0.3s ease-in-out, padding 0.3s ease-in-out, border-bottom 0.3s ease-in-out; 
+    -o-transition: background 0.3s ease-in-out, padding 0.3s ease-in-out, border-bottom 0.3s ease-in-out; 
+    transition: background 0.3s ease-in-out, padding 0.3s ease-in-out, border-bottom 0.3s ease-in-out; 
 }
 
 .navbar-custom {
@@ -56,8 +56,7 @@ a:focus {
 	font-size: 11px;
 	letter-spacing: 2px;
 	font-weight: 500;
-    border-radius:0;
-    border-bottom: 1px solid rgb(180,180,180);
+    border-bottom: 1px solid rgba(180,180,180, 1);
 }
 
 .navbar-custom .navbar-brand {
@@ -113,7 +112,7 @@ a:focus {
 .navbar-transparent {
     padding: 20px 30px;
     background: transparent;
-    border-bottom: 0px;
+    border-bottom: 1px solid rgba(180,180,180, 0);
 }
 
 .navbar-transparent .navbar-brand {
@@ -243,18 +242,11 @@ background-color: rgb(35, 35, 35)
     margin-bottom: 25px
 }
 
-#jumbo-follow{
-    text-transform: uppercase;
-    font-weight :500;
-    font-size: 14px;
-    letter-spacing:6px;
-    margin-top: 45px;
-}
 
 #jumbo-lead{
     color: rgba(255,255,255,.8);
     letter-spacing: 6px;
-    font-size: 20px;
+    font-size: 2rem;
     font-family:trebuchet;
     text-transform: uppercase;
     
@@ -262,10 +254,18 @@ background-color: rgb(35, 35, 35)
 
 #jumbo-hero{
     color: #FFF;
-    font-size: 72px;
+    font-size: 7.2rem;
     font-weight: 600;
     letter-spacing:6px;
     line-height:80px
+}
+
+#jumbo-follow{
+    text-transform: uppercase;
+    font-weight :500;
+    font-size: 14px;
+    letter-spacing:6px;
+    margin-top: 45px;
 }
 
 
@@ -275,6 +275,10 @@ background-color: rgb(35, 35, 35)
     padding: 13px 10px 13px 15px;
     letter-spacing: 4px;
     margin-right: 4px;
+    -webkit-transition: background 0.2s ease, color 0.2s ease;
+    -moz-transition: background 0.2s ease, color 0.2s ease;
+    -o-transition: background 0.2s ease, color 0.2s ease;
+    transition: background 0.2s ease, color 0.2s ease;
 }
 
 #jumbo-link:hover {
@@ -297,6 +301,8 @@ background-color: rgb(35, 35, 35)
     content here
 
 ---------------------------------*/
+
+
 .block{
     padding-bottom: 60px;
 }
