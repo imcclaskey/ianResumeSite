@@ -22,10 +22,13 @@ a:focus {
 
 /*-----------------------------------
 
-      devicon styling here
+      fade sections
 
 -------------------------------------*/
 
+.fader { 
+    display: none; 
+}
 
 
 
@@ -39,16 +42,12 @@ a:focus {
 -------------------------------------*/
 
 
-.navbar-custom {
-    transition-delay
+.nav {
     -webkit-transition: background 0.3s ease-in-out, padding 0.3s ease-in-out, border 0.3s ease-in-out;
     -moz-transition: background 0.3s ease-in-out, padding 0.3s ease-in-out, border 0.3s ease-in-out;
     -o-transition: background 0.3s ease-in-out, padding 0.3s ease-in-out, border 0.3s ease-in-out;
     transition: background 0.3s ease-in-out, padding 0.3s ease-in-out, border 0.3s ease-in-out;
 }
-
-
-
 
 .navbar-custom {
     padding: 0px 30px;
@@ -67,27 +66,35 @@ a:focus {
     letter-spacing: 4px;
     font-weight: 300;
     padding-left: 0px;
+    -webkit-transition: color 0.3s ease .1s;
+    -moz-transition: color 0.3s ease .1s;
+    -o-transition: color 0.3s ease .1s;
+    transition: color 0.3s ease .1s;
+    
 }
 
 .navbar-custom .navbar-nav > li > a {
     color: rgb(80,80,80);
-    background-color:transparent;
+    -webkit-transition: color 0.3s ease .1s;
+    -moz-transition: color 0.3s ease .1s;
+    -o-transition: color 0.3s ease .1s;
+    transition: color 0.3s ease .1s;
+    
 }
 
 .navbar-custom .navbar-nav > li > a:hover {
     color: rgb(80,80,80);
     text-decoration: underline;
-    background-color: transparent;
+    s
 }
 
 .navbar-custom .navbar-nav > li > a:focus{
-    background-color: transparent;
     text-decoration: underline;
     color: rgb(80,80,80);
+    
 }
 
 .navbar-custom .navbar-nav > li > a:active {
-    background-color: transparent;
     text-decoration: underline;
     color: rgb(80,80,80);
 }
@@ -277,7 +284,11 @@ background-color: rgb(35, 35, 35)
     letter-spacing: 4px;
     margin-right: 4px;
     color: black;
-    text-decoration: none
+    text-decoration: none;
+    -webkit-transition: background 0.2s ease, color 0.2s ease;
+    -moz-transition: background 0.2s ease, color 0.2s ease;
+    -o-transition: background 0.2s ease, color 0.2s ease;
+    transition: background 0.2s ease, color 0.2s ease;
 }
 
 
@@ -286,26 +297,33 @@ background-color: rgb(35, 35, 35)
     content here
 
 ---------------------------------*/
-
-.content {
-    padding-top: 70px;
+.block{
+    padding-bottom: 60px;
 }
 
-.content #title {
+
+.title {
     font-family: garamond;
-    font-size: 32px;
-    color: rgb(0, 0, 0, 0);
+    font-size: 3rem;
+    color: black;
     letter-spacing: 3px;
     text-align: center;
-    padding: 30px 30px 30px 30px;
+    padding-top: 80px;
+    padding-bottom: 30px;
 }
 
-.content #subtitle {
-    font-size: 16px;
+.subtitle {
+    font-size: 2rem;
     color: gray;
     letter-spacing: 3px;
     text-align: center;
-    padding: 0px 120px 50px 120px;
+    padding: 30px 0;
+    
+}
+
+#resume #icons .subtitle {
+    font-size:1.5rem;
+
 }
 
 
@@ -326,5 +344,5 @@ background-color: rgb(35, 35, 35)
 }
 
 #resume #icons i:nth-child(1):hover{
-    : ;
+
 }

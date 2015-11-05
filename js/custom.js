@@ -1,5 +1,5 @@
-
 $(document).ready(function() {
+
 
 	navbar = $('#navbar');
 	navbarToggle = $('#navbar-toggle');
@@ -8,41 +8,32 @@ $(document).ready(function() {
 					"icons/css3-original.svg", 
 					"icons/javascript-original.svg",
 					"icons/meteor-original.svg",
-					"icons/photoshop-plain.svg",
-					"icons/illustrator-plain.svg"];
-
-	console.log(techIcons);
-
-	/*
-	techIcons = [
-					["icons/html5-plain.svg", "icons/html5-original.svg"],
-					["icons/css3-plain.svg", "icons/css3-original.svg"],
-					["icons/javascript-plain.svg", "icons/javascript-original.svg"],
-					["icons/meteor-plain.svg", "icons/meteor-original.svg"],
-					["icons/photoshop-line.svg", "icons/photoshop-plain.svg"],
-					["icons/illustrator-line.svg", "icons/illustrator-plain.svg"]
+					"icons/bootstrap-original.svg",
+					"icons/python-original.svg"
 	];
-	*/
+	techHolds = [
+					"icons/html5-plain.svg", 
+					"icons/css3-plain.svg", 
+					"icons/javascript-plain.svg",
+					"icons/meteor-plain.svg", 
+					"icons/bootstrap-plain.svg", 
+					"icons/python-plain.svg",
+	];
+
+	//fade in effect
+
+	$(".fader").each(function(i) {
+	  	$(this).delay(i * 200).fadeIn();
+	});
+	
 
 
-	$('#icons div img').each(function(i, obj) {
-		var hold = [];
-		hold.push(this.src);
-		console.log(hold);
-		obj.addEventListener("mouseover",function(){
-		    this.src = techIcons[i];
-		});
-		obj.addEventListener("mouseout",function(){
-		    this.src = hold[i];
-		});
-	}); 
-
-
-
-	navbarCheck(navbar);
 
 
 	// navbar transform on scroll
+
+	navbarCheck(navbar);
+
 
 	$(window).scroll(function() {
 			navbarAnimation(navbar, navbarToggle);
@@ -57,10 +48,11 @@ $(document).ready(function() {
 		}
 	}
 
+
 	function navbarAnimation(navbar, navbarToggle) {
 		var topScroll = $(window).scrollTop();
 		if (navbarTrans === true) {
-			if (topScroll >= 1) {
+			if (topScroll >= 25) {
 				navbar.removeClass('navbar-transparent');
 				navbarToggle.removeClass('navbar-toggle-transparent');
 			} else {
@@ -69,6 +61,28 @@ $(document).ready(function() {
 			}
 		}
 	}
+
+
+	//resume icon hover effect
+
+	$('#icons div img').each(function(i, obj) {
+		
+		/* $(this).hover(function() {
+		   $(this).hide( function(){
+		      $(this).attr('src', techIcons[i]).bind('onreadystatechange load', function(){
+		         if (this.complete) $(this).fadeIn(300);
+		      });
+		   });
+		}); */
+
+		obj.addEventListener("mouseover",function(){
+		    this.src = techIcons[i];
+		});
+		obj.addEventListener("mouseout",function(){
+		    this.src = techHolds[i];
+		});
+	}); 
+
 });
 
 
