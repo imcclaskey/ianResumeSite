@@ -1,7 +1,7 @@
 /* All style should go in this document. */
-body { 
-	/* padding-top: 50px; */
-}
+
+
+
 
 /* Links */
 a{
@@ -25,70 +25,159 @@ a:focus {
 
 
 
- /* navbar-custom styling here*/
+/*-----------------------------------
+
+      navbar-custom styling here
+
+-------------------------------------*/
+
+
 .navbar-custom {
-	margin: 30px 40px 30px 40px;
-    background-color: rgba(0,0,0,0.0);
-    color: rgba(255,255,255,.8);
+    transition-delay
+    -webkit-transition: background 0.3s ease-in-out, padding 0.3s ease-in-out, border 0.3s ease-in-out;
+    -moz-transition: background 0.3s ease-in-out, padding 0.3s ease-in-out, border 0.3s ease-in-out;
+    -o-transition: background 0.3s ease-in-out, padding 0.3s ease-in-out, border 0.3s ease-in-out;
+    transition: background 0.3s ease-in-out, padding 0.3s ease-in-out, border 0.3s ease-in-out;
+}
+
+
+
+
+.navbar-custom {
+    padding: 0px 30px;
+    background-color: #fff;
     text-transform: uppercase;
 	font-size: 11px;
 	letter-spacing: 2px;
 	font-weight: 500;
     border-radius:0;
+    border-bottom: 1px solid rgb(180,180,180);
 }
-
-.navbar-custom .navbar-nav > li > a {
-    color:(255,255,255,.6);
-    background-color:transparent;
-}
-
-.navbar-custom .navbar-nav > li > a:hover {
-	color: #fff;
-    background-color: transparent;
-}
-
-.navbar-custom .navbar-nav > li > a:focus{
-    background-color: transparent;
-    color: #fff;
-}
-
-.navbar-custom .navbar-nav > li > a:active {
-    background-color: transparent;
-    color: #fff;
-}
-
 
 .navbar-custom .navbar-brand {
-    color:#eeeeee;
-    font-family: tahoma;
+    color: rgb(80,80,80);
+    font-family: sans-serif;
     letter-spacing: 4px;
     font-weight: 300;
     padding-left: 0px;
 }
 
-
-
-
-
-
-/*-- icon bar styling */
-.icon-bar {
-	background-color: rgba(255,255,255,.6);
+.navbar-custom .navbar-nav > li > a {
+    color: rgb(80,80,80);
+    background-color:transparent;
 }
-.navbar-custom .navbar-toggle:hover .icon-bar {
-    background-color: white;
+
+.navbar-custom .navbar-nav > li > a:hover {
+    color: rgb(80,80,80);
+    text-decoration: underline;
+    background-color: transparent;
 }
-.navbar-toggle {
+
+.navbar-custom .navbar-nav > li > a:focus{
+    background-color: transparent;
+    text-decoration: underline;
+    color: rgb(80,80,80);
+}
+
+.navbar-custom .navbar-nav > li > a:active {
+    background-color: transparent;
+    text-decoration: underline;
+    color: rgb(80,80,80);
+}
+
+
+
+
+
+
+/*-----------------------------------
+
+    navbar-transparent styling here
+
+-------------------------------------*/
+
+.navbar-transparent {
+    padding: 20px 30px;
+    background: transparent;
+    border-bottom: 0px;
+}
+
+.navbar-transparent .navbar-brand {
+    color:#eeeeee;
+    font-family: sans-serif;
+    letter-spacing: 4px;
+    font-weight: 300;
+    padding-left: 0px;
+}
+
+.navbar-transparent .navbar-nav > li > a {
+    color: rgba(255,255,255,.6);
+    background-color:transparent;
+}
+
+.navbar-transparent .navbar-nav > li > a:hover {
+    color: #fff;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.navbar-transparent .navbar-nav > li > a:focus{
+    background-color: transparent;
+    text-decoration: none;
+    color: #fff;
+}
+
+.navbar-transparent .navbar-nav > li > a:active {
+    background-color: transparent;
+    color: #fff;
+}
+
+
+
+
+
+/*--------------------------
+
+       icon bar styling 
+
+ ---------------------------*/
+
+.navbar-toggle, .navbar-toggle-transparent {
     margin-right: 0px;
 }
 
+.navbar-toggle .icon-bar {
+    background-color: rgb(80,80,80);
+}
+
+.navbar-toggle:hover .icon-bar {
+    background-color: black;
+}
 
 
 
 
 
 
-/* navmenu-custom styling here */
+.navbar-toggle-transparent .icon-bar {
+    background-color: rgba(255,255,255,.6);
+}
+
+.navbar-toggle-transparent:hover .icon-bar {
+    background-color: white;
+}
+
+
+
+
+/*----------------------------------
+
+    navmenu-custom styling here 
+
+ ----------------------------------*/
+
+
+
 .nav > li > a:hover, .nav > li > a:focus {
     text-decoration: none;
     background-color: transparent;
@@ -119,7 +208,14 @@ background-color: rgb(35, 35, 35)
 
 
 
-/* jumbotron styling here */
+/*--------------------------------
+
+    jumbotron styling here 
+
+-------------------------------*/
+
+
+
 #jumbo-inset {
     padding-top: 30px;
     padding-bottom: 30px;
