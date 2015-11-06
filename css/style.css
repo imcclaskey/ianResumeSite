@@ -265,6 +265,7 @@ background-color: rgb(35, 35, 35)
     font-weight :500;
     font-size: 14px;
     letter-spacing:6px;
+    line-height: 50px;
     margin-top: 45px;
 }
 
@@ -327,10 +328,7 @@ background-color: rgb(35, 35, 35)
     
 }
 
-#resume #icons .subtitle {
-    font-size:1.5rem;
 
-}
 
 
 /*--------------------------------
@@ -347,6 +345,13 @@ background-color: rgb(35, 35, 35)
     
 }
 
+
+#resume #icons .subtitle {
+    font-size:1.5rem;
+
+}
+
+
 #resume img{
     bottom: 0px;
     opacity: 100%;
@@ -356,6 +361,10 @@ background-color: rgb(35, 35, 35)
     -o-transition: bottom 0.3s ease, opacity 0.2s ease-out;
     transition: bottom 0.3s ease, opacity 0.2s ease-out;
     
+}
+
+#resume img:hover {
+    bottom: 20px;
 }
 
 #resume .dropfade {
