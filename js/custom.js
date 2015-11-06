@@ -22,19 +22,20 @@ $(document).ready(function() {
 	var index = 0;
 
 	function dropHover() {
-		setInterval(function () {
+		var timer = setInterval(function () {
 		    elements.eq(index).removeClass('dropfade');
 		    elements.eq(index).addClass('')
 		    index++;
 
 		    if (index >= elements.length) {
-	         	clearInterval(this);
+	         	clearInterval(timer);
 	     	}
 		}, 100);
 	};
 
-	setTimeout(dropHover, 400);
 
+	setTimeout(dropHover, 400);
+	clearInterval(dropHover);
 
 
 
