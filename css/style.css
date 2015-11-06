@@ -21,6 +21,19 @@ a:focus {
     background-color: transparent;
 }
 
+hr {
+    width: 60%;
+}
+
+
+@media (max-width: 480px) {
+    hr {
+       width: 100%;
+       border-top: 1px solid #888;
+    }
+}
+
+
 
 /*-----------------------------------
 
@@ -113,6 +126,11 @@ a:focus {
     color: rgb(80,80,80);
 }
 
+@media (max-width: 480px) {
+    .navbar-custom{
+        padding: 0px 30px 0px 20px;
+    }
+}
 
 /*-----------------------------------
 
@@ -157,6 +175,11 @@ a:focus {
     color: #fff;
 }
 
+@media (max-width: 480px) {
+    .navbar-transparent{
+        padding: 5px 30px 10px 20px;
+    }
+}
 
 /*--------------------------
 
@@ -317,6 +340,16 @@ a:focus {
     transition: background 0.2s ease, color 0.2s ease;
 }
 
+@media (max-width: 480px) {
+    #jumbo-hero{
+        font-size:4.8rem;
+        line-height: 60px;
+    }
+    .jumbotron{
+        padding: 50px 0 0px 0;
+    }
+}
+
 
 /*--------------------------------
 
@@ -348,6 +381,19 @@ a:focus {
     
 }
 
+@media (max-width: 480px) {
+    .block {
+        padding-bottom: 10px;
+    }
+    .title {
+        padding: 20px 0;
+
+    }
+    .subtitle {
+        padding: 0;
+        letter-spacing: 2px;
+    }
+}
 
 
 
@@ -381,6 +427,11 @@ a:focus {
     bottom: 20px;
 }
 
+@media (max-width: 480px) {
+    #resume #icons .subtitle{
+        display: none;
+    }
+}
 
 /*--------------------------------
 

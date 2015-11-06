@@ -56,7 +56,7 @@ $(document).ready(function() {
 	function navbarAnimation(navbar, navbarToggle) {
 		var topScroll = $(window).scrollTop();
 		if (navbarTrans === true) {
-			if (topScroll >= 25) {
+			if (topScroll >= 1) {
 				navbar.removeClass('navbar-transparent');
 				navbarToggle.removeClass('navbar-toggle-transparent');
 			} else {
