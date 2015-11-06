@@ -1,2 +1,2 @@
-# my-first-github-repo
-An initial test repo for A100 Apprentices to use to practice on.
+# IanResumeSite
+This is the personal website I created as an A100 Apprentice.
