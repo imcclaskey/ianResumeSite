@@ -101,10 +101,10 @@ hr {
 
 .navbar-nav > li > a {
     color: rgb(150,150,150);
-    -webkit-transition: color 0.25s ease, background-color 0.25s ease;
-    -moz-transition: color 0.25s ease, background-color 0.25s ease;
-    -o-transition: color 0.25s ease, background-color 0.25s ease;
-    transition: color 0.25s ease, background-color 0.25s ease;
+    -webkit-transition: background-color 0.25s ease;
+    -moz-transition: background-color 0.25s ease;
+    -o-transition: background-color 0.25s ease;
+    transition: background-color 0.25s ease;
     
 }
 
@@ -192,7 +192,7 @@ hr {
 }
 
 .navbar-toggle .icon-bar {
-    background-color: rgb(80,80,80);
+    background-color: rgb(180,180,180);
     -webkit-transition: background-color 0.25s ease;
     -moz-transition: background-color 0.25s ease;
     -o-transition: background-color 0.25s ease;
